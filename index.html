@@ -8,7 +8,7 @@
   <title>username matthew</title>
   <style>
   body{
-    font-size: clamp(14px, 3.5vw, 20px);
+    font-size: clamp(17px, 3.5vw, 20px);
     font-family: monospace;
     font-weight: bold;
     margin: .75% 1.5%;
@@ -35,9 +35,11 @@
 
 <a target="_blank" href="https://github.com/username-matthew">github</a>
 <h1>live projects</h1>  
+
+
 <hr>
 <hr>
-<a target="_blank" href="https://username-matthew.github.io/">https://username-matthew.github.io/</a>
+<a target="_blank" href="https://username-matthew.github.io/">Portfolio</a>
 <a target="_blank" href="https://username-matthew.github.io/blog/">https://username-matthew.github.io/blog/</a>
 
 <hr>
@@ -72,25 +74,34 @@
 <a target="_blank" href="https://picatsosketch.com/"></a>
 
 
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
-<a target="_blank" href=""></a>
 
 
+<script>
 
+const links = document.querySelectorAll('a');
 
+function modifyLinks() {
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+    const textContent = link.textContent;
 
+    if (href && !href.includes('github.com')) {
+      let newHref = href.replace(/^https:\/\/username-matthew\.github\.io/, 'username-matthew');
+      newHref = newHref.replace(/^https:\/\/|\.github\.io/g, '');
 
+      if (textContent.includes("Portfolio")) {
+        newHref = newHref.replace(/username-matthew(\/)?(?!$)/, 'username-matthew'); 
+      } else {
+        newHref = newHref.replace(/username-matthew(\/)?(?!$)/, ''); 
+      }
 
+      link.textContent = newHref; 
+    }
+  });
+}
 
+modifyLinks();
+
+</script>
 </body>
 </html>
