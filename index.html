@@ -33,14 +33,14 @@
 </head>
 <body>
 
-<a target="_blank" href="https://github.com/username-matthew">github</a>
+<a target="_blank" href="https://github.com/mattheweq">github</a>
 <h1>live projects</h1>  
 
 
 <hr>
 <hr>
-<a target="_blank" href="https://username-matthew.github.io/">Portfolio</a>
-<a target="_blank" href="https://username-matthew.github.io/blog/">https://username-matthew.github.io/blog/</a>
+<a target="_blank" href="https://mattheweq.github.io/">Portfolio</a>
+<a target="_blank" href="https://mattheweq.github.io/blog/">https://mattheweq.github.io/blog/</a>
 
 <hr>
 <hr>
@@ -54,20 +54,20 @@
 <hr>
 <a target="_blank" href="https://picviewcompare.github.io/">https://picviewcompare.github.io/</a>
 <a target="_blank" href="https://computerartmaker.github.io/">https://computerartmaker.github.io/</a>
-<a target="_blank" href="https://username-matthew.github.io/swatches/">https://username-matthew.github.io/swatches/</a>
+<a target="_blank" href="https://mattheweq.github.io/swatches/">https://mattheweq.github.io/swatches/</a>
 <a target="_blank" href="https://browsernotes.github.io/">https://browsernotes.github.io/</a>
 <a target="_blank" href="https://word-count.github.io/">https://word-count.github.io/</a>
 <a target="_blank" href="https://easycss.github.io/">https://easycss.github.io/</a>
 <a target="_blank" href="https://codesearch.olk1.com/">https://codesearch.olk1.com/</a>
-<a target="_blank" href="https://username-matthew.github.io/password-generator/">https://username-matthew.github.io/password-generator/</a>
+<a target="_blank" href="https://mattheweq.github.io/password-generator/">https://mattheweq.github.io/password-generator/</a>
 
 <hr>
 <hr>
-<a target="_blank" href="https://username-matthew.github.io/responsive-sortable-data-table/">https://username-matthew.github.io/responsive-sortable-data-table/</a>
-<a target="_blank" href="https://username-matthew.github.io/jelly-bounce/">https://username-matthew.github.io/jelly-bounce/</a>
-<a target="_blank" href="https://username-matthew.github.io/page-transitions-2/">https://username-matthew.github.io/page-transitions-2/</a>
-<a target="_blank" href="https://username-matthew.github.io/flicker-error/">https://username-matthew.github.io/flicker-error/</a>
-<a target="_blank" href="https://username-matthew.github.io/giant-loading-spinner/">https://username-matthew.github.io/giant-loading-spinner/</a>
+<a target="_blank" href="https://mattheweq.github.io/responsive-sortable-data-table/">https://mattheweq.github.io/responsive-sortable-data-table/</a>
+<a target="_blank" href="https://mattheweq.github.io/jelly-bounce/">https://mattheweq.github.io/jelly-bounce/</a>
+<a target="_blank" href="https://mattheweq.github.io/page-transitions-2/">https://mattheweq.github.io/page-transitions-2/</a>
+<a target="_blank" href="https://mattheweq.github.io/flicker-error/">https://mattheweq.github.io/flicker-error/</a>
+<a target="_blank" href="https://mattheweq.github.io/giant-loading-spinner/">https://mattheweq.github.io/giant-loading-spinner/</a>
 <hr>
 <hr>
 <a target="_blank" href="https://pillpopper.github.io/">https://pillpopper.github.io/</a>
@@ -89,13 +89,13 @@ function modifyLinks() {
     const textContent = link.textContent;
 
     if (href && !href.includes('github.com')) {
-      let newHref = href.replace(/^https:\/\/username-matthew\.github\.io/, 'username-matthew');
+      let newHref = href.replace(/^https:\/\/mattheweq\.github\.io/, 'mattheweq');
       newHref = newHref.replace(/^https:\/\/|\.github\.io/g, '');
 
       if (textContent.includes("Portfolio")) {
-        newHref = newHref.replace(/username-matthew(\/)?(?!$)/, 'username-matthew'); 
+        newHref = newHref.replace(/mattheweq(\/)?(?!$)/, 'mattheweq'); 
       } else {
-        newHref = newHref.replace(/username-matthew(\/)?(?!$)/, ''); 
+        newHref = newHref.replace(/mattheweq(\/)?(?!$)/, ''); 
       }
 
       link.textContent = newHref; 
