@@ -57,6 +57,7 @@
 <a target="_blank" href="https://30words.github.io/">https://30words.github.io/</a>
 <a target="_blank" href="https://pickviewcompare.github.io/">https://pickviewcompare.github.io/</a>
 <a target="_blank" href="https://expanderapp.github.io">https://expanderapp.github.io</a>
+<a target="_blank" href="https://press.olk1.com/">Wordpress/NextJS</a>
 
 <br />
 
@@ -114,6 +115,10 @@ function modifyLinks() {
       return;
     }
 
+	if(textContent === "Wordpress/NextJS" || textContent === "Wordpress/NextJS"){
+	  return;
+	}
+	    
     if (href && !href.includes('github.com')) {
       let newHref = href.replace(/^https:\/\/mattheweq\.github\.io/, 'mattheweq');
       newHref = newHref.replace(/^https:\/\/|\.github\.io/g, '');
@@ -124,7 +129,7 @@ function modifyLinks() {
         newHref = newHref.replace(/mattheweq(\/)?(?!$)/, ''); 
       }
 
-      link.textContent = newHref; 
+      link.textContent = newHref;
     }
   });
 }
